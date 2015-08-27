@@ -13,6 +13,7 @@
 		168DD25C1B8EABC600255470 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168DD25B1B8EABC600255470 /* Images.xcassets */; };
 		168DD25F1B8EABC600255470 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168DD25D1B8EABC600255470 /* LaunchScreen.xib */; };
 		168DD26B1B8EABC600255470 /* MiniBlogAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DD26A1B8EABC600255470 /* MiniBlogAppTests.swift */; };
+		BC9685BCDB8781C1DD1A8119 /* Pods_MiniBlogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FA914BC4543F32A1D64AAF /* Pods_MiniBlogApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		168DD2641B8EABC600255470 /* MiniBlogAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBlogAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168DD2691B8EABC600255470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		168DD26A1B8EABC600255470 /* MiniBlogAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBlogAppTests.swift; sourceTree = "<group>"; };
+		19FA914BC4543F32A1D64AAF /* Pods_MiniBlogApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniBlogApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B779BB99A3FBA452BF2401 /* Pods-MiniBlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniBlogApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniBlogApp/Pods-MiniBlogApp.release.xcconfig"; sourceTree = "<group>"; };
+		7FDBB245A5399641DF3AA7B9 /* Pods-MiniBlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniBlogApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniBlogApp/Pods-MiniBlogApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9685BCDB8781C1DD1A8119 /* Pods_MiniBlogApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				168DD2511B8EABC600255470 /* MiniBlogApp */,
 				168DD2671B8EABC600255470 /* MiniBlogAppTests */,
 				168DD2501B8EABC600255470 /* Products */,
+				20C0001226BD380DD16F6A04 /* Pods */,
+				E485F310AD442508513BD614 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		20C0001226BD380DD16F6A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FDBB245A5399641DF3AA7B9 /* Pods-MiniBlogApp.debug.xcconfig */,
+				34B779BB99A3FBA452BF2401 /* Pods-MiniBlogApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E485F310AD442508513BD614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19FA914BC4543F32A1D64AAF /* Pods_MiniBlogApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 168DD26E1B8EABC600255470 /* Build configuration list for PBXNativeTarget "MiniBlogApp" */;
 			buildPhases = (
+				8A3A1970D811A4104244C647 /* Check Pods Manifest.lock */,
 				168DD24B1B8EABC600255470 /* Sources */,
 				168DD24C1B8EABC600255470 /* Frameworks */,
 				168DD24D1B8EABC600255470 /* Resources */,
+				9C80B4C6A615FFA618377317 /* Embed Pods Frameworks */,
+				41C9A2D540AD9512F03E5558 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C9A2D540AD9512F03E5558 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniBlogApp/Pods-MiniBlogApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A3A1970D811A4104244C647 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C80B4C6A615FFA618377317 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniBlogApp/Pods-MiniBlogApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		168DD24B1B8EABC600255470 /* Sources */ = {
@@ -340,6 +415,7 @@
 		};
 		168DD26F1B8EABC600255470 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FDBB245A5399641DF3AA7B9 /* Pods-MiniBlogApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MiniBlogApp/Info.plist;
@@ -350,6 +426,7 @@
 		};
 		168DD2701B8EABC600255470 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B779BB99A3FBA452BF2401 /* Pods-MiniBlogApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MiniBlogApp/Info.plist;
@@ -411,6 +488,7 @@
 				168DD2701B8EABC600255470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		168DD2711B8EABC600255470 /* Build configuration list for PBXNativeTarget "MiniBlogAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +497,7 @@
 				168DD2731B8EABC600255470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
